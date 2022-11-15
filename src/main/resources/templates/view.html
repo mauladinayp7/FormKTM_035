@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Kartu Tanda Mahasiswa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+            fieldset {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                width: 700px;
+                background-color: #d5ede6;
+                color: black;
+                padding: 20px;
+            }
+                </style>
+    </head>
+    <body>
+        <fieldset>
+            <center><h3>Kartu Tanda Mahasiswa</h3></center>
+            <hr>
+            <center>
+                <img th:src="${gbr}" style="width: 150px; height: 200px;"/>
+            </center>
+            <br><br/>
+            <center><l th:text="${nama}"></l></center>
+            <br/>
+            <center><l th:text="${nim}"></l></center>
+            <br/>
+            <center><l th:text="${fakultas}"></l></center>
+            <br/>
+            <center><l th:text="${jurusan}"></l></center>
+        </fieldset>
+    </body>
+</html>
